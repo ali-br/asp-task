@@ -1,0 +1,15 @@
+.row {
+    margin-top: 20px;
+	display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin-bottom: 20px;
+}
+.col{
+border-radius: 8px;
+background-color: rgb(226 232 240);
+}
+/* .ant-collapse{
+    width: 90%;
+    margin: 0 auto;
+} */

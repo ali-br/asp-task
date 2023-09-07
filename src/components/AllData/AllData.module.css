@@ -1,0 +1,24 @@
+.root{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.button{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(203 213 225);
+    color: black;
+    text-align: center;
+    font-weight: 500;
+}
+.div-button{
+    text-align: right;
+    margin-bottom: 15px;
+}

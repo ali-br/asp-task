@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    border-radius: 50%;
+    background-color: rgb(203 213 225);
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
