@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/asp-task/static/css/main.5c695226.css",
-    "main.js": "/asp-task/static/js/main.e1bedc0e.js",
+    "main.js": "/asp-task/static/js/main.fada4fb3.js",
     "index.html": "/asp-task/index.html",
     "main.5c695226.css.map": "/asp-task/static/css/main.5c695226.css.map",
-    "main.e1bedc0e.js.map": "/asp-task/static/js/main.e1bedc0e.js.map"
+    "main.fada4fb3.js.map": "/asp-task/static/js/main.fada4fb3.js.map"
   },
   "entrypoints": [
     "static/css/main.5c695226.css",
-    "static/js/main.e1bedc0e.js"
+    "static/js/main.fada4fb3.js"
   ]
 }
