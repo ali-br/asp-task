@@ -4,7 +4,6 @@ import styles from "./index.module.css";
 const CollapseBox = ({ items, isCheck, setIsCheck }) => {
 	const [isCheckAll, setIsCheckAll] = useState(false);
 	const handleSelectAll = (e) => {
-		e.stopPropagation();
 		setIsCheckAll(!isCheckAll);
 		setIsCheck(items.map((item) => item.uniqueId));
 		if (isCheckAll) {
@@ -41,9 +40,11 @@ const CollapseBox = ({ items, isCheck, setIsCheck }) => {
 							children: items
 								.toSorted((a, b) => a.uniqueId - b.uniqueId)
 								.map((item) => (
-									<div key={item.uniqueId} className={styles.container}>
+									<div
+										key={item.uniqueId}
+										className={styles["child-container"]}>
 										<div>#{item.uniqueId}</div>
-										<div>
+										<div style={{marginRight:20}}>
 											{item.created.split("T").shift().split("-").join("/")}
 										</div>
 										<Checkbox

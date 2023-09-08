@@ -1,6 +1,7 @@
 .container{
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
 }
 .title{
     border-radius: 50%;
@@ -8,4 +9,15 @@
     width: 25px;
     height: 25px;
     text-align: center;
+}
+.child-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(203 213 225);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 30px;
+    padding: 0px 10px;
+    font-size: 16px;
 }

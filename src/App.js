@@ -1,7 +1,6 @@
 import { Row, Col } from "antd";
 import SelectedData from "./components/SelectedData/SelectedData";
 import AllData from "./components/AllData/AllData";
-import { useState } from "react";
 import styles from "./App.module.css";
 
 function App() {
