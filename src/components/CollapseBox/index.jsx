@@ -38,20 +38,22 @@ const CollapseBox = ({ items, isCheck, setIsCheck }) => {
 									<Checkbox onChange={handleSelectAll} checked={isCheckAll} />
 								</div>
 							),
-							children: items.map((item) => (
-								<div key={item.uniqueId} className={styles.container}>
-									<div>#{item.uniqueId}</div>
-									<div>
-										{item.created.split("T").shift().split("-").join("/")}
+							children: items
+								.toSorted((a, b) => a.uniqueId - b.uniqueId)
+								.map((item) => (
+									<div key={item.uniqueId} className={styles.container}>
+										<div>#{item.uniqueId}</div>
+										<div>
+											{item.created.split("T").shift().split("-").join("/")}
+										</div>
+										<Checkbox
+											key={item.uniqueId}
+											id={item.uniqueId}
+											onChange={handleClick}
+											checked={isCheck.includes(item.uniqueId)}
+										/>
 									</div>
-									<Checkbox
-										key={item.uniqueId}
-										id={item.uniqueId}
-										onChange={handleClick}
-										checked={isCheck.includes(item.uniqueId)}
-									/>
-								</div>
-							)),
+								)),
 						},
 					]}
 				/>
