@@ -15,11 +15,13 @@ const AllData = () => {
 		dispatch(addItem([selectedItems, leftItems]));
 		setIsCheck([]);
 	};
+	console.log(isCheck.length);
 	return (
 		<div className={styles.root}>
 			<h2>All Data</h2>
 			<div className={styles["div-button"]}>
 				<Button
+					disabled={isCheck.length > 0 && items.length > 0 ? false : true}
 					onClick={() => handleDispatch(selectedItems, leftItems)}
 					className={styles.button}>
 					Add

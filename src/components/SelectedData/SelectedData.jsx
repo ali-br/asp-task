@@ -20,6 +20,7 @@ const SelectedData = () => {
 			<h2>Selected Data</h2>
 			<div className={styles["div-button"]}>
 				<Button
+				disabled={isCheck.length > 0 && items.length > 0 ? false : true}
 					onClick={() => handleDispatch(select, leftItems)}
 					className={styles.button}>
 					Delete
