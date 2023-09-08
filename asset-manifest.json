@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/asp_task_deploy/static/css/main.5c695226.css",
+    "main.js": "/asp_task_deploy/static/js/main.e1bedc0e.js",
+    "index.html": "/asp_task_deploy/index.html",
+    "main.5c695226.css.map": "/asp_task_deploy/static/css/main.5c695226.css.map",
+    "main.e1bedc0e.js.map": "/asp_task_deploy/static/js/main.e1bedc0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c695226.css",
+    "static/js/main.e1bedc0e.js"
+  ]
+}
